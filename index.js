@@ -28,9 +28,9 @@ const examsDetails = {
           id: 4,
         },
         {
-          code: "HUT300/HUT310",
+          code: "HUT300",
           date: "December 7, 2024 9:30:00",
-          name: "Industrial Economics And Foreign Trade / Management For Engineers",
+          name: "Industrial Economics And Foreign Trade",
           id: 5,
         },
         {
@@ -86,9 +86,7 @@ function countdown(cdate, dest) {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    dest.innerHTML =
-    //   days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    days + "d " + hours + "h " + minutes + "m ";
+    dest.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
   }, 1000);
 }
 
